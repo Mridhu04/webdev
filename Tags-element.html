@@ -6,32 +6,77 @@
     <title>Tags v/s element</title>
     <style>
     *{
-        background-color: cadetblue;
+        background-color: rgb(191, 210, 211);
 
         </style>
 
 </head>
 <body>
-    <h1> Tags and element</h1>
+    <h1> Tags & Element</h1>
     <hr>
     <h2> HTML element</h2>
     <p> An HTML element is defined by a start tag, some content, and an end tag. </p>
     <p> Most HTML elements are written with a start tag (or opening tag) and an end tag (or closing tag), with content in between. Elements can also contain attributes that define its additional properties. For example, a paragraph, which is represented by the p element, would be written as: </p>
-<div>
-    <img src="/images/html-element.jpeg" alt="Element syntax element">
-</div>
-<p> we learn about the HTML Pagea <a href="demo.html">next chapter</a></p>
+    <div> <img src="images\html-element.jpeg" alt=""></div>
+
+<b>This is image</b>
+<p> We will learn about the HTML attributes <a href="demo.html">next chapter</a></p>
     <p><strong>Note:</strong> The block-level elements should not be placed within inline-level elements. For example, the <p> element should not be placed inside the <b> element.</p>
-        <h2> HTML Elements Types</h2>
+        <P><h2> HTML Vs Elements</h2></P>
         <p>Technically, an HTML element is the collection of start tag, its attributes, an end tag and everything in between. On the other hand an HTML tag (either opening or closing) is used to mark the start or end of an element, as you can see in the above illustration</p>
-<p>However, in common usage the terms HTML element and HTML tag are interchangeable i.e. a tag is an element is a tag. For simplicity's sake of this website, the terms "tag" and "element" are used to mean the same thing — as it will define something on your web page</p>
-<h2> BLOCK INLINE Element</h2>
-<strong>HTML Elements Types</strong>
+<p>However, in common usage th
+e terms HTML element and HTML tag are interchangeable i.e. a tag is an element is a tag. For simplicity's sake of this website, the terms "tag" and "element" are used to mean the same thing — as it will define something on your web page</p>
+<h2>Case insensitivity in HTML Tags and Attributes</h2>
+<pre>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;P&gt;This is also a valid paragraph.&lt;/P&gt;</pre>
+<p><strong>Tip:</strong>We recommend using lowercase for tag and attributing names in HTML, since by doing this you can make your document more compliant for future upgrades.</p>
+<h2>Empty HTML Elements</h2>
+<p>Empty elements (also called self-closing or void elements) are not container tags — that means, you can not write &lt;hr&gt;some content&lt;/hr&gt; or &lt;br&gt;some content&lt;/br&gt;.</p>
+
+A typical example of an empty element, is the &lt;br&gt; element, which represents a line break. Some other common empty elements are &lt;img&gt;, &lt;input&gt;, &lt;link&gt;, &lt;meta&gt;, &lt;hr&gt;, etc.
+<pre>
+&lt;p&gt;This paragraph contains &lt;br&gt; a line break.&lt;/p&gt;
+&lt;img src="images/sky.jpg" alt="Cloudy Sky"&gt;
+&lt;input type="text" name="username"&gt;
+</pre><p> <strong>Note: </strong>In HTML, a self-closing element is written simply as &lt;br&gt;. In XHTML, a self-closing element requires a space and a trailing slash, such as &lt;br&gt;.</p>
+<h2>Nesting HTML Elements</h2>
+<P>Most HTML elements can contain any number of further elements (except empty elements), which are, in turn, made up of tags, attributes, and content or other elements.</P>
+The following example shows some elements nested inside the &lt;p&gt; element
+<pre>&lt;p&gt;Here is some &lt;b&gt;bold&lt;/b&gt; text.&lt;/p&gt;
+&lt;p&gt;Here is some &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;
+&lt;p&gt;Here is some &lt;mark&gt;highlighted&lt;/mark&gt; text.&lt;/p&gt;
+</pre>
+
+<p><strong>Tip:</strong>Placing one element inside another is called nesting. A nested element, also called a child element, can be a parent element too if other elements are nested within it.</p>
+HTML tags should be nested in correct order. They must be closed in the inverse order of how they are defined, that means the last tag opened must be closed first.
+<pre>
+    &lt;p&gt;&lt;strong&gt;These tags are nested properly.&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;These tags are not nested properly.&lt;/p&gt;&lt;/strong&gt;
+</pre>
+<h2> Writing Comments in HTML</h2>
+<p>
+    Comments are usually added with the purpose of making the source code easier to understand. It may help other developer (or you in the future when you edit the source code) to understand what you were trying to do with the HTML. Comments are not displayed in the browser.</p>
+An HTML comment begins with &lt;!--, and ends with --&gt;, as shown in the example below:
+<pre><!-- This is an HTML comment -->
+<!-- This is a multi-line HTML comment 
+     that spans across more than one line -->
+&lt;p&gt;This is a normal piece of text.&lt;/p7gt;</pre>
+<h3>HTML Elements Types</h3>
 <p> Elements can be placed in two distinct groups: block level and inline level elements. The former make up the document's structure, while the latter dress up the contents of a block.</p>
 <p>Also, a block element occupies 100% of the available width and it is rendered with a line break before and after. Whereas, an inline element will take up only as much space as it needs.</p>
 <p>The most commonly used block-level elements are &lt;div&gt;, &lt;p&gt;, &lt;h1&gt; through &lt;h6&gt;, &lt;form&gt;, &lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;, and so on. Whereas, the commonly used inline-level elements are &lt;img&gt;, &lt;a&gt;, &lt;span&gt;, &lt;strong&gt;, &lt;b&gt;, &lt;em&gt;, &lt;i&gt;, &lt;code&gt;, &lt;input&gt;, &lt;button&gt;, etc</p>
 <P>You will learn about these elements in detail in upcoming chapters</P>
-<p>strong>Note:</strong>The block-level elements should not be placed within inline-level elements. For example, the <p> element should not be placed inside the <b> element.</b></p>
+<p><strong>Note:</strong>The block-level elements should not be placed within inline-level elements. For example, the <p> element should not be placed inside the <b> element.</b></p>
+<h1>code of block</h1>
+<pre><code>&lt;div&gt; &lt;img src="images1.PNG" alt="Element syntax element"&gt;
+&lt;/div&gt;</code></pre>
+<div> <img src="images1.PNG" alt="Element syntax element">
+</div>
+
+
+<hr>
+<pre> &lt;img src="image2.PNG" alt="Element syntax element"&gt;</pre>
+<div> <img src="image2.PNG" alt="Element syntax element"></div>
 
 
 </body>

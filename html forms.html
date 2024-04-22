@@ -1,32 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html forms </title>
 </head>
+
 <body>
     <h1>html forms</h1>
+    <form>
     <div>
-   <label for=" username">Username:
-    <input type="text"></label></div>
+        <label for=" username">Username:
+            <input type="text" required></label>
+    </div>
+
+    <div> 
+        <label for=" email">email:
+        <input type="email"></label>
+    </div>
 
 
 
 
 
     <div><label for=" userphone">phone number:
-        <input type="number"></label>
+            <input type="tel" placeholder=" 9015196975"></label>
     </div>
     <div><label for=" password">password:
-        <input type="password"></label></div>
-        <div><label for="Gender">Gender:
-            <input type="Checkbox">
-            <input type="Checkbox"> </label></div>
-            <button type="submit">submit</button>
-            <button type="reset">reset</button>
-    
+            <input type="password" placeholder=" Mridhu@2003"></label></div>
+    <div>
+        <input type="radio" name="gender">
+        <label for=" Male"> Male</label>
+        <input type="radio" name="gender">
+        <label for=" Female">Female</label>
+    </div>
+    <div> <label for="usercity"> City</label>
+        <select name=" city">
+            <option value=" mohali">Mohali</option>
+            <option value=" jalandhar">jalandhar</option>
+            <option value=" delhi">delhi</option>
+            <option value=" ketnal">ketnal</option>
+
+
+
+
+        </select>
+    </div>
+    <div>
+
+        <label for="Game">game</label>
+
+        <input type="checkbox" name="soccer">
+        <label for="soccer"> soccer</label>
+
+        <input type="checkbox" name="soccer">
+        <label for="football"> football</label>
+
+        <input type="checkbox" name="soccer">
+        <label for="cricket"> cricket</label>
+
+    </div>
+    <div>
+        <label for="Checkbox">Are you above 18?<br>
+            <label for=" Yes"> Yes</label>
+            <input type="radio" name="18">
+            <label for="No">NO</label>
+            <input type="radio" name="18">
+
+
+
+        </label>
+    </div>
+    <div>
+        <label for="upload">upload</label>
+        <input type="file">
+        <button type="submit">upload</button>
+    </div>
+    <div>
+        <label for="Address"> Address</label>
+        <textarea name="address" id="add1" cols="40" rows="20"></textarea>
+    </div>
+    <button type="submit" value="12">submit</button>
+    <button type="reset" value="14">reset</button>
+    </form>
+    <div> 
+        <h2>HTML5 New Input Types</h2>
+        <label for="Choose a color"></label>
+        <input type="color">
+
+        <label for="datetime-local"></label>
+        <input type="datetime-local">
         
-    
+        <input type="range">
+        
+        <input type="search">
+
+        <input type="month">
+        
+
+        <label for="  "></label>
+    </div>
 </body>
-</html>
+
+</html> 

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 input type.html</title>
+</head>
+
+<body>
+    <h1>HTML5 New Input Types</h1>
+    <p>In this tutorial you will learn about the new input types that have been introduced in HTML5.</p>
+    <h1>New Input Types in HTML5</h1>
+    <p>HTML5 introduces several new <input> types like email, date, time, color, range, and so on. to improve the user
+        experience and to make the forms more interactive. However, if a browser failed to recognize these new input
+        types, it will treat them like a normal text box.</p>
+    In this section we're going to take a brief look at each of the following new input types:
+
+    <ul>
+        <li>
+            <a href="color">color</a>
+        </li>
+        <li>
+            <a href="date-input">date</a>
+        </li>
+        <li>
+            <a href="number-input">number</a>
+        </li>
+        <li>
+            <a href="range"> range</a>
+        </li>
+        <li>
+            <a href="Tel">Telephone</a>
+        </li>
+        <li><a href="search">search</a>
+        </li>
+        <li>
+            <a href="week">week</a>
+        </li>
+        <li>
+            <a href="url">url</a>
+        </li>
+        <li>
+            <a href="month">month</a>
+        </li>
+        <li>
+            <a href="datetime_local">datetime_local</a>
+        </li>
+        <li>
+            <a href="email">email</a>
+        </li>
+        <li>
+            <a href="Time">Time</a>
+        </li>
+    </ul>
+    <p>There was also a datetime input type for entering a date and time, but it is now obsolete.</p>
+    <h1>Input Type Color</h1>
+    <p>The color input type allows the user to select a color from a color picker and returns the color value in
+        hexadecimal format (#rrggbb). If you don't specify a value, the default is #000000, which is black.
+        Let's try out the following example to understand how it basically works:</p>
+    <pre> <code>
+            &lt;form&gt;
+    &lt;label for="mycolor"&lt;Select Color:&gt;/label&gt;
+    &lt;input type="color" value="#00ff00" id="mycolor"&gt;
+           &lt;/form&lt;
+        </code>
+    </pre>
+    <p>
+        <strong>Note:</strong>The color input (i.e. type="color") is supported in all major modern web browsers such as
+        Firefox, Chrome, Opera, Safari (12.1+), Edge (14+). Not supported by the Microsoft Internet Explorer and older
+        version of Apple Safari browsers.
+    </p>
+    <h1>Input Type Date</h1>
+    <p>The date input type allows the user to select a date from a drop-down calendar.
+        The date value includes the year, month, and day, but not the time.
+    </p>
+    <pre><code>
+        &lt;form&gt;
+    &lt;label for="mydate"&gt;Select Date:&lt;/label&gt;
+    &lt;input type="date" value="2019-04-15" id="mydate"&gt;
+&lt;/form&gt;
+    </code></pre>
+    <p><strong>Note: </strong>The date input (i.e. type="date") is supported by the Chrome, Firefox, Opera and Edge
+        browsers. Not supported by the Internet Explorer and Safari browsers.</p>
+    <h2>Input Type Datetime-local</h2>
+    <p>The datetime-local input type allows the user to select both local date and time, including the year, month, and
+        day as well as the time in hours and minutes.
+        Let's try out the following example to understand how it basically works:
+    </p>
+    <pre><code>&lt;form&gt;
+        &lt;label for="mydatetime"&gt;Choose Date and Time:&lt;/label&gt;
+        &lt;input type="datetime-local" id="mydatetime"&gt;
+    &lt;/form&gt;</code>
+</pre>
+    <h1>Input Type Email</h1>
+    <p>The email input type allows the user to enter e-mail address. It is very similar to a standard text input type,
+        but if it is used in combination with the required attribute, the browser may look for the patterns to ensure a
+        properly-formatted e-mail address should be entered.
+        Let's try out this example by entering any e-mail address to see how it actually works:</p>
+    <pre><code>
+    &lt;form&gt;
+    &lt;label for="myemail"&gt;Enter Email Address:&lt;/label&gt;
+    &lt;input type="email" id="myemail" required&gt;
+    &lt;/form&gt;
+</code></pre>
+    <p><strong>Tip:</strong>You can style the email input field for different validation states, when an value is
+        entered using the :valid, :invalid or :required pseudo-classes.</p>
+    <h1>Input Type Month</h1>
+    <p>The month input type allows the user to select a month and year from a drop-down calendar.
+        The value is a string in the format "YYYY-MM", where YYYY is the four-digit year and MM is the month number.
+        Let's try out an example to see how this basically works:
+    </p>
+    <pre>
+        <code> &lt;form&gt;
+            &lt;label for="mymonth"&gt;Select Month:&lt;/label&gt;
+            &lt;input type="month" id="mymonth"&gt;
+        &lt;/form&gt;
+    </code>
+    </pre>
+    <h1>Input Type Number</h1>
+    <p>The number input type can be used for entering a numerical value. You can also restrict the user to enter only
+        acceptable values using the additional attributes min, max, and step.
+        The following example will allow you to enter a numeric value between 1 to 10.</p>
+    <pre> <COde>
+    &lt;form&gt;
+    &lt;label for="mynumber"&gt;Enter a Number:&lt;/label&gt;
+    &lt;input type="number" min="1" max="10" step="0.5" id="mynumber"&gt;
+   &lt;/form&gt;
+</COde></pre>
+    <p><strong>Note:</strong>The number input (i.e. type="number") is supported by all major web browsers such as
+        Firefox, Chrome, Safari, Opera, Internet Explorer 10 and above. Internet Explorer however recognized the number
+        but do not provide increment and decrement spin buttons.</p>
+    <h1>Input Type Range</h1>
+    <p>The range input type can be used for entering a numerical value within a specified range. It works very similar
+        to number input, but it offers a simpler control for entering a number.
+        Let's try out the following example to understand how it basically works:
+    </p>
+    <pre><code>
+        &lt;form&gt;
+        &lt;label for="mynumber"&gt;Select a Number:&lt;/label&gt;
+        &lt;input type="range" min="1" max="10" step="0.5" id="mynumber"&gt;    
+    &lt;/form&gt;</code>
+
+</pre>
+    <p><strong>Note:</strong>The range input (i.e. type="range") is supported by all major web browsers such as Firefox,
+        Chrome, Safari, Opera, Internet Explorer 10 and above.</p>
+    <h1>Input Type Search</h1>
+    <p>The search input type can be used for creating search input fields.
+        A search field typically behaves like a regular text field, but in some browsers like Chrome and Safari as soon
+        as you start typing in the search box a small cross appears on the right side of the field that lets you quickly
+        clear the search field. Let's try out an example to see how it works:</p>
+    <pre><code>&lt;form&gt;
+    &lt;label for="mysearch"&gt;Search Website:&lt;/label&gt;
+    &lt;input type="search" id="mysearch"&gt;
+&lt;/form</code></pre>
+    <p><strong>Note:</strong>The search input (i.e. type="search") is supported by all major web browsers such as
+        Firefox, Chrome, Safari, Opera, Internet Explorer 10 and above.</p>
+    <h1>Input Type Tel</h1>
+    <p>The tel input type can be used for entering a telephone number.
+        Browsers don't support tel input validation natively. However, you can use the placeholder attribute to help
+        users in entering the correct format for a phone number, or specify a regular expression to validate the user
+        input using the pattern attribute. Let's check out an example:</p>
+    <pre><Code>
+    &lt;form&gt;
+        &lt;label for="myphone"&gt;Telephone Number:&lt;/label&gt;
+        &lt;input type="tel" id="myphone" placeholder="xx-xxxx-xxxx" required&gt;
+    &lt;/form&gt;
+</Code></pre>
+    <h1>Input Type Time</h1>
+    <p>The time input type can be used for entering a time (hours and minutes).
+        Browser may use 12- or 24-hour format for inputting times, based on local system's time setting.</p>
+    <pre> <code>
+    &lt;form&gt;
+    &lt;label for="mytime"&gt;Select Time:&lt;/label&gt;
+    &lt;input type="time" id="mytime"&gt;
+&lt;/form&gt;
+</code></pre>
+    <h1>Input Type URL</h1>
+    <p>The url input type can be used for entering URL's or web addresses.
+        You can use the multiple attribute to enter more than one URL. Also, if required attribute is specified browser
+        will automatically carry out validation to ensure that only text that matches the standard format for URLs is
+        entered into the input box. Let's see how this works:</p>
+    <pre><code>
+    &lt;form&gt;
+    &lt;label for="myurl"&gt;Enter Website URL:&lt;/label&gt;
+    &lt;input type="url" id="myurl" required&gt;
+&lt;/form&gt;</code></pre>
+    <p><strong>Note:</strong> The validation for the url input (i.e. type="url") is supported by all major browsers like
+        Firefox, Chrome, Safari, Opera, Internet Explorer 10 and above.
+    </p>
+    <h1>Input Type Week</h1>
+    <p>The week input type allows the user to select a week and year from a drop-down calendar.
+        Let's try out the following example to understand how this works:</p>
+    <pre><code>
+    &lt;form&gt;
+    &lt;label for="myweek"&gt;Select Week:&lt;/label&gt;
+    &lt;input type="week" id="myweek"&gt;
+&lt;/form&gt;
+</code></pre>
+</body>
+
+</html>
