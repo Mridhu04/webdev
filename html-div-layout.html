@@ -7,52 +7,77 @@
     <title>html-Div-layout</title>
 </head>
 <style>
-    ul,li{
+    table{
+        width: 200px;
+    }
+    div {
+        border: 2px solid lightgreen;
+    }
+
+    ul,li {
         list-style-type: none;
     }
-    a{
-        text-decoration: none;
+
+    a {
+    text-align: center;
     }
-    nav{
+
+    nav {
         display: block;
-        float: left ;
-     margin: 10px 20px;
+        float: left;
+        padding-right:30px;
+        padding-top: 10px;
+    }
+    .Aligncenetr{
+            text-align: center;
+            padding: 10px 40px;
+    }
+
+    section {
+        padding: 5px 23px;
+        text-align: center;
+    }
+    h1 {
+        margin-left:40px;
+
     }
 </style>
+
 <body>
     <div>
         <div>
             <header>
                 <h1>Table Tutorial</h1>
+                
             </header>
         </div>
-    
-    <div>
 
-        <nav>
-            <ul>
-                <li><a href="">Home</a>
-                <li><a href="">About</a>
+        <div>
 
-                <li><a href="">Contact</a>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a>
+                    <li><a href="">About</a>
+
+                    <li><a href="">Contact</a>
 
 
-                </li>
-            </ul>
+                    </li>
+                </ul>
 
-        </nav>
-        <section>
-<h1> Welcome to our site</h1>
-<p>Here you will learn how to create websites..</p>
-        </section>
+            </nav>
+            <section>
+                <h1> Welcome to our site</h1>
+                <p>Here you will learn how to create websites..</p>
+            </section>
+        </div>
+        <div>
+            <footer>
+                <td class="headercolor" colspan="2">copyright © tutorialrepublic.com</td>
+
+            </footer>
+        </div>
     </div>
-    <div>
-        <footer>
-            copyright © tutorialrepublic.com
-
-        </footer>
-    </div>
-</div>
 </body>
 
 </html>
