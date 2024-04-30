@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navbar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <Style>
         nav {
             display: flex;
@@ -15,6 +15,9 @@
             align-items: center;
             border: 3px solid black;
             height: 100px;
+            background-color: azure;
+            
+
 
         }
 
@@ -23,8 +26,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px solid rgb(183, 26, 26);
+            border: 3px solid black;
             margin: 5px;
+            border-radius: 4px;
         }
 
         .menu {
@@ -43,10 +47,34 @@
             align-content: center;
         }
 
-        .body {
+        body {
 
-            background-color: blue;
-            font-family:  sans-serif;
+            background-color: lightgrey;
+            font-family: "Open Sans", sans-serif
+        }
+
+        section img {
+            height: 400px;
+            width: 300px;
+            border: 2px solid black;
+            position: absolute;
+            left: 1000px;
+            top: 120px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            background-color: rgb(214, 230, 191);
+
+
+
+
+        }
+
+        .Left {
+            border: 2px solid black;
+            height: 200px;
+            width: 550px;
+
         }
     </Style>
 </head>
@@ -55,17 +83,36 @@
     <header>
         <nav>
 
+
             <div Class="title">
                 <div class="img"> <img src="icons8-css-logo-48.png" alt="" height="65px;" width="75px;">CSS Navbar</div>
             </div>
             <div Class="menu">
-                <li>Home</li>
-                <li>About</li>
-                <li>course</li>
-                <li>projects</li>
-                <li>contact us</li>
+              
+               <li><a href="https://www.techopedia.com/definition/5172/home-page">Home</a></li>
+                <li><a href="https://linkconsulting.com/about-link/">About</a></li>
+                <li><a href="https://www.lpuonline.com/master-of-computer-application.php">course</a></li>
+                <li><a href="https://projectslinks.com/">projects</a></li>
+                <li><a href="https://www.contactlink.com/">contact us</a></li>
             </div>
         </nav>
+        <section>
+            <div>
+                <div class="Left">
+                    <h1>Introduction to Front-end development</h1>
+                    A front-end developer builds the front-end portion of websites and web applications
+                    the part users see and interact with. A front-end developer creates websites and</p>
+                    <p>
+                        applications using web languages such as HTML, CSS, and JavaScript that allow users to
+                        access and interact with the site or app.</p>
+                </div>
+                <div class="right"><img src="-web-developer-png - Copy.webp" alt="">
+
+
+                </div>
+
+            </div>
+        </section>
     </header>
 </body>
 
