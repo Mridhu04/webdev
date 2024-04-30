@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-positioning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            border: 2px solid rgb(122, 57, 57);
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .Box {
+            height: 1000px;
+            position: sticky;
+        }
+
+        .box1 {
+
+            height: 150px;
+            width: 400px;
+            position: sticky;
+            top: 250px;
+            left: 150px;
+            background-color: aquamarine;
+            z-index: -1;
+        }
+
+        .box2 {
+            height: 100px;
+            width: 400px;
+            position: absolute;
+            left: 100px;
+            background-color: bisque;
+            top: 300;
+            position: fixed;
+        }
+
+        .box3 {
+            /*position: absolute;*/
+            height: 100px;
+            width: 300px;
+            left: 50px;
+            top: 100px;
+            position: fixed;
+            background-color: beige;
+
+        }
+
+        a {
+            cursor: wait;
+            border: 2px solid blueviolet;
+            background-color: bisque;
+            border-radius: 3px;
+        }
+
+        .flow {
+            border: 3px solid green;
+            height: 40vh;
+            width: 80vw;
+            overflow: auto;
+            background-color: rgb(215, 228, 250);
+
+
+        }
+
+        .btn {
+            border: 2px solid green;
+            height: 35px;
+            width: 60px;
+            background-color: rgb(130, 103, 155);
+            border-radius: 25PX;
+
+            left: 200px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Box">
+        <a href="">GO TO next</a>
+        <div class="box1">Hello</div>
+        <div class="box2">Fixed position</div>
+        <div class="box3">good morning</div>
+    </div>
+    <div class="flow">
+        <p>Lorem, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nam aliquam fugit vel vero
+            architecto eum reprehenderit est. Excepturi qui quos, unde neque, harum sapiente, deserunt accusamus error
+            tenetur velit commodi? Tenetur voluptatum iusto voluptas culpa rem a quidem iste debitis vitae consequuntur
+            doloremque aliquam non vero nam error autem modi corporis repellat numquam quas minus quasi illum, beatae
+            assumenda? Ad iusto odit error quo dolor quis labore animi! Autem doloribus, harum vel tempora cupiditate
+            dolorem neque hic repellendus natus ex tenetur, doloremque quod obcaecati rerum deleniti molestiae. Facilis,
+            exercitationem. ipsum dolor sit amet consectetur adipisicing elit. Impedit sit iste ut, maxime esse quis.
+            Itaque rerum, magnam explicabo in quis corporis sapiente repellendus dolorum quia, culpa delectus facilis
+            ducimus? Lorem ipsum, placeholder or dummy text used in typesetting and graphic design for previewing
+            layouts. It features scrambled Latin text, which emphasizes the design over content of the layout. It is the
+            standard placeholder text of the printing and publishing industries. Related Topics: graphic design
+            typesetting.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit sit
+            iste ut, maxime esse quis. Itaque rerum, magnam explicabo in quis corporis sapiente repellendus dolorum
+            quia, culpa delectus facilis ducimus? Lorem ipsum, placeholder or dummy text used in typesetting and graphic
+            design for previewing layouts. It features scrambled Latin text, which emphasizes the design over content of
+            the layout. It is the standard placeholder text of the printing and publishing industries. Related Topics:
+            graphic design typesetting.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum. </p>
+
+
+
+
+
+
+    </div>
+    <div class="btn">
+        Hello
+
+    </div>
+
+
+</body>
+
+</html>

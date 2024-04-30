@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-FLEXBOX</title>
+    <style>
+        .container{
+            height: 200px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+           /* align-content:center;*/
+           /*row-gap: 5px;*/
+           flex-flow: row wrap;
+        
+        }
+            .items{
+
+                height: 30px;
+                width: 40px;
+                border: 3px solid purple;
+                margin: 5px; 
+            }
+            .item1{
+                background-color: rgb(236, 236, 108);
+                /* flex-grow: 1;*/
+                 flex-shrink: 3;
+
+            }
+            .item2{
+                align-self: center;
+                /* position: relative; */
+
+                
+
+            }
+        .item3{
+            background-color: antiquewhite;
+            flex-grow: 0.5;
+
+        }
+    </style>
+</head>
+<body>
+    <div class=" container">
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items"></div>
+       
+    </div>
+    <h1> Difference Between align-content and align-item.</h1>
+    <p>The align-items property moves along the CROSS axis, never the main axis (the align-items property is like the Robin to justify-content’s Batman). As we’ve seen above, when you’re using a flex-direction of row the cross axis is the vertical y-axis. Below the align-items: center moved vertically along the cross axis.</p>
+    <p>Align content adds spacing between & around items with MULTIPLE LINES. Align-content is used only when you have items that wrap into multiple lines of the flex container, i.e., align-content will not work when flex-wrap is set to “nowrap.</p>
+</body>
+</html>
