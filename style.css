@@ -1,0 +1,30 @@
+h1{
+    color: blue;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.outline{
+    height: 100px;
+    width:100px;
+    background-color: lightpink;
+    border: 5px solid green;
+    margin: auto;
+    outline: 5px solid grey;
+    outline-offset: 5px; 
+    position: relative;
+    top: 22px;
+    
+
+}
+.outer{
+   border: 2px solid darkgreen;
+   height: 150px;
+   width: 150px;
+   background-color: aqua;
+   margin: auto;
+
+    
+
+}
