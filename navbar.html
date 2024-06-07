@@ -30,8 +30,9 @@
             margin: 5px;
             border-radius: 4px;
             cursor: move;
-            background-color: rgb(211, 211, 208);
+            /* background-color: rgb(211, 211, 208); */
             color: rgb(219, 38, 38);
+            border: none;
             
             
         
@@ -99,10 +100,16 @@
         }
         .Leftsection{
             /* background-color: rgb(156, 157, 156); */
-            border: 3px solid black;
+             border: 3px solid black; 
             /* margin: 20px; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
             
             
+        }
+        .myname{
+          color: blue;
         }
         
 
@@ -131,11 +138,11 @@
         <section class="firstsection">
             <div>
                 <div class="Leftsection">
-                    <h1>Introduction to Front-end development</h1>
-                    A front-end developer builds the front-end portion of websites and web applications
-                    the part users see and interact with.A front-end developer creates websites and
-                     applications using web languages such as HTML, CSS, and JavaScript that allow users to
-                        access and interact with the site or app.</p>
+                    Hi, I am <span class="myname" >Mridhu</span>
+                    <div>i do</div>
+                    <span id="Element"></span>
+                    
+                    
                 </div>
                  <div class="rightsection"><img src="-web-developer-png - Copy.webp" alt="">
 
@@ -145,7 +152,15 @@
             </div>
         </section>
     </main>
-    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#Element', {
+      strings: ['web developer','cricketer','influencer'],
+      typeSpeed: 50,
+    });
+  </script>
     
 </body>
 
