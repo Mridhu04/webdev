@@ -1,0 +1,41 @@
+
+//Explicit conversion = converted by the user
+let score = 33;
+console.log(typeof score);//Number
+var a = String(score)
+console.log(a)
+console.log(typeof a)//String
+
+let score2 ="33";
+console.log(typeof score2);//String
+
+let scoreInNumber = Number(score2);
+console.log(typeof scoreInNumber);
+
+let adult = true;
+console.log(typeof adult);
+console.log (Number(adult));//true=1; false=0;
+
+//string to number conve3rsion
+let score3 = "33abc";
+console.log(typeof Number(score3));
+console.log(Number(score3));  //Nan i.e Not a Number
+
+let score4 = null;
+console.log(typeof Number(score4));
+console.log(Number(score4));   //Nan i.e Not a Number
+
+let score5 = undefined;
+console.log(typeof Number(score5));
+console.log(Number(score5));
+
+//iiii
+let life=1;
+life=Boolean(life)
+console.log(life)
+console.log(typeof life)
+
+let life1="";
+life1=Boolean(life1)
+console.log(life1) //false
+console.log(typeof life1) //boolean
